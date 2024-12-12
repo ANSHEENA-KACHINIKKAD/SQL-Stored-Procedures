@@ -112,7 +112,31 @@ This repository contains SQL scripts for creating a Worker table and various sto
     -- Call the procedure
     CALL GetAverageSalaryByDepartment('IT', @avgSalary);
     SELECT @avgSalary AS AverageSalary;
-    
+
+
+## Notes
+SQL stored procedures are precompiled collections of SQL statements that are stored in a database. By utilizing stored procedures, we can enhance the efficiency, security, and maintainability of database applications.
+
+They offer several benefits, including:
+
+* Reusability: Stored procedures can be executed multiple times, reducing code redundancy.
+   
+* Performance: Precompilation can improve execution performance.
+
+* Security: You can grant specific permissions to users to execute stored procedures, enhancing security control over database operations.
+
+* Modularity: Complex database operations can be broken down into smaller, more manageable stored procedures.
+
+* Reduced Network Traffic: By executing procedures on the server-side, you can minimize the amount of data transferred between the client and the server.
+
+## Steps:
+ 1.Create the Worker table
+
+ 2.Create the stored procedures
+
+ 3.Call the stored procedures
+
+ 
 
 
   
